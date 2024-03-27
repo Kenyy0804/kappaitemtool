@@ -1,0 +1,12 @@
+<h1>Itemlists#index</h1>
+<p>Find me in app/views/itemlists/index.html.erb</p>
+<div class="contents row">
+  <% @itemlists.each do |itemlist| %>
+    <div class="content_post" style="background-image: url(<%= itemlist.image %>);">
+      <p><%= itemlist.text %></p>
+      <span class="name">
+        <%= itemlist.name %>
+      </span>
+    </div>
+  <% end %>
+</div>
