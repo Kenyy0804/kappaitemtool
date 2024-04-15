@@ -1,6 +1,9 @@
 <div class="contents row">
   <% @itemlists.each do |itemlist| %>
     <div class="content_post" style="background-image: url(<%= itemlist.image %>);">
+          <div class="overlay">
+        <input type="checkbox" class="checkbox">
+      </div>
       <p><%= itemlist.text %></p>
       <span class="name">
         <%= itemlist.name %>
