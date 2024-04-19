@@ -1,7 +1,8 @@
 <div class="contents row">
+  <div class="post" href="new_itemlist_path">投稿する</div>
   <% @itemlists.each do |itemlist| %>
     <div class="content_post" style="background-image: url(<%= itemlist.image %>);">
-          <div class="overlay">
+      <div class="overlay">
         <input type="checkbox" class="checkbox">
       </div>
       <p><%= itemlist.text %></p>
