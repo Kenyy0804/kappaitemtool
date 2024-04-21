@@ -1,15 +1,13 @@
-<div class="contents row">
-  <div class="post" href="new_itemlist_path">投稿する</div>
-  <% @itemlists.each do |itemlist| %>
-    <div class="content_post" style="background-image: url(<%= itemlist.image %>);">
-      <div class="overlay">
-        <input type="checkbox" class="checkbox">
-      </div>
-      <p><%= itemlist.text %></p>
-      <span class="name">
-        <%= itemlist.name %>
-      </span>
+<main class="main">
+  <div class="inner">
+    <%# ログインしているときは以下を表示する %>
+      <%# <div class="greeting"> %>
+        <%# こんにちは、 %>
+        <%# <%= link_to "ユーザー名さん", root_path, class: :greeting__link%>
+      <%# </div> %>
+    <%# // ログインしているときは上記を表示する %>
+    <div class="card__wrapper">
+      <%# 投稿機能実装後、部分テンプレートでプロトタイプ投稿一覧を表示する %>
     </div>
-  <% end %>
-</div>
-#エラーの解消完了、明日は画像を保存して３列で表示できるようにする
+  </div>
+</main>
